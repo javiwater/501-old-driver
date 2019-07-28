@@ -1,3 +1,3 @@
 # data-structures-and-algorithms
 
-Leetcodes solutions written with ES6
+My leetcode solutions written with ES6
