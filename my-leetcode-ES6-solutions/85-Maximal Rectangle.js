@@ -24,7 +24,7 @@ var maximalRectangle = function(matrix) {
       let len = Number.MAX_SAFE_INTEGER
       for (let k = i; k < r; k++) {
         len = Math.min(len, dp[k][j])
-        if (len == 0) break
+        if (len == 0) break//Current ES6 forEach doesn't support break/continue due to callback
         ans = Math.max(len * (k - i + 1), ans)
       }
     })
