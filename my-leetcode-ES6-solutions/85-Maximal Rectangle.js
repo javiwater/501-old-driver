@@ -5,9 +5,8 @@
  * @return {number}
  */
 var maximalRectangle = function(matrix) {
-  const r = matrix.length
-  if(r === 0) return 0
-  const c = matrix[0].length
+  const length = matrix.length
+  if(length === 0) return 0
 
   // dp[i][j] := max len of all 1s ends with col j at row i.
   const dp = []
